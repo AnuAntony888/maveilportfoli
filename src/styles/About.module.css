@@ -1,0 +1,218 @@
+.trainContainer {
+  /* Add background image */
+  background-image: url("../../public/home1.png");
+
+  /* Prevent image from repeating */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center center; /* Center the background image both horizontally and vertically */
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 100vh;
+  background-color: #f4af1b;
+}
+.comp1tx1 {
+  padding: 3%;
+  padding-right: 3%;
+  text-align: right;
+
+  font-weight: bolder;
+  font-size: 3rem;
+}
+.train {
+  position: relative;
+  max-width: 900px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  right: calc(-100vw - 100px); /* Initial position off-screen on the right */
+  animation: moveTrain 20s linear infinite; /* 5s duration, linear easing, infinite loop */
+}
+
+@keyframes moveTrain {
+  0% {
+    right: calc(-50vw); /* Initial position off-screen on the right */
+  }
+  100% {
+    right: calc(100vw + 100px); /* Move to the left edge of the viewport */
+  }
+}
+
+.ab {
+  color: beige;
+  background-color: chocolate;
+}
+.aboutimg {
+  animation: rotatexAnimation 5s linear infinite;
+}
+@keyframes rotatexAnimation {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.rotate {
+  animation: rotateAnimation 5s linear infinite;
+}
+.card {
+  min-height: 240px !important;
+  background-color: transparent !important;
+  color: rgb(85, 194, 195) !important;
+  color: #f9d675 !important;
+  border: 0.5px solid #f4af1b !important;
+  border-radius: 10px 50px !important;
+
+  box-shadow: rgba(85, 194, 195, 0.4) 5px 5px, rgba(85, 194, 195, 0.3) 10px 10px,
+    rgba(85, 194, 195, 0.2) 15px 15px, rgba(85, 194, 195, 0.1) 20px 20px,
+    rgba(85, 194, 195, 0.05) 25px 25px !important;
+  /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; */
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotatey(0deg);
+  }
+  to {
+    transform: rotateY(-90deg);
+  }
+}
+.card:hover {
+  color: rgb(241, 23, 187) !important;
+  color: #f9d675 !important;
+  border: 5px solid #f4af1b !important;
+  border-radius: 10px 50px !important;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px !important;
+}
+
+.cardAbout {
+  background: transparent !important;
+  backdrop-filter: blur(10px) !important;
+  border: 0.5px solid #f4af1b !important;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px !important;
+
+  backdrop-filter: blur(20px) !important;
+}
+
+.cardAbout:hover {
+  background: rgb(77, 95, 95) !important;
+}
+
+.cardcontact {
+  background: white !important;
+  backdrop-filter: blur(10px) !important;
+  border: 0.5px solid #f4af1b !important;
+  box-shadow: rgba(85, 194, 195, 0.4) 5px 5px, rgba(85, 194, 195, 0.3) 10px 10px,
+    rgba(85, 194, 195, 0.2) 15px 15px, rgba(85, 194, 195, 0.1) 20px 20px,
+    rgba(85, 194, 195, 0.05) 25px 25px !important;
+
+  backdrop-filter: blur(20px) !important;
+}
+
+.cardcontact:hover {
+  background: rgba(27, 244, 219, 0.3) !important;
+}
+.cardheadershadow {
+  box-shadow: rgba(85, 194, 195, 0.4) 5px 5px, rgba(85, 194, 195, 0.3) 10px 10px,
+    rgba(85, 194, 195, 0.2) 15px 15px, rgba(85, 194, 195, 0.1) 20px 20px,
+    rgba(85, 194, 195, 0.05) 25px 25px;
+}
+
+.aboutimg2:hover {
+  -webkit-animation-name: wobble;
+  animation-name: wobble;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-transform-origin: 50% 100%;
+}
+
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes wobble {
+  0% {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  15% {
+    -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  100% {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.cardwhatioffer {
+  background: transparent !important;
+  backdrop-filter: blur(10px) !important;
+  border: 0.5px solid #f4af1b !important;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px !important;
+
+  backdrop-filter: blur(20px) !important;
+}
